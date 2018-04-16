@@ -1,0 +1,4 @@
+.qrcode{
+    width: 278rpx;
+    height: 278rpx;
+}
