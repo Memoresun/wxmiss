@@ -1,0 +1,16 @@
+<view class="app">
+    <view class="weui-table">
+        <view class="weui-tr-thead weui-flex">
+            <view class="weui-th" wx:for="{{th}}"></view>
+        </view>
+        <view class="weui-tr weui-flex" wx:for="{{tables}}" wx:for-item="table" data-id="{{index}}" bindtbap="openModel">
+            <view class="weui-td" wx:for="{{table}}">{{item}}</view>
+        </view>
+        <view bindtap="addLine">添加行</view>
+    </view>
+</view>
+<view class="weui-model">
+    <form bindsubmit="weuiform">
+        <view class="weui-form"></view>
+    </form>
+</view>
