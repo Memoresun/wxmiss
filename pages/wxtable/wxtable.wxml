@@ -1,16 +1,55 @@
 <view class="app">
     <view class="weui-table">
         <view class="weui-tr-thead weui-flex">
-            <view class="weui-th" wx:for="{{th}}"></view>
+            <view class="weui-th">name1</view>
+            <view class="weui-th">name2</view>
+            <view class="weui-th">name3</view>
+            <view class="weui-th">name4</view>
+            <view class="weui-th">name5</view>
         </view>
-        <view class="weui-tr weui-flex" wx:for="{{tables}}" wx:for-item="table" data-id="{{index}}" bindtbap="openModel">
-            <view class="weui-td" wx:for="{{table}}">{{item}}</view>
+        <view class="weui-tr weui-flex">
+            <view class="weui-td">12</view>
+            <view class="weui-td">13</view>
+            <view class="weui-td">14</view>
+            <view class="weui-td">15</view>
+            <view class="weui-td">16</view>
         </view>
         <view bindtap="addLine">添加行</view>
     </view>
 </view>
+
 <view class="weui-model">
     <form bindsubmit="weuiform">
-        <view class="weui-form"></view>
+        <view class="weui-cells__title">输入</view>
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hb">
+                    <view class="weui-label">name</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入qq" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hb">
+                        <view class="weui-label">name</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="请输入qq" />
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__hb">
+                            <view class="weui-label">name</view>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input class="weui-input" placeholder="请输入qq" />
+                        </view>
+                    </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" form-type="submit">确认</button>
+            <button class="weui-btn" bindtap="closeModel">取消</button>
+        </view>
     </form>
 </view>

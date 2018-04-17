@@ -1,0 +1,44 @@
+.app {
+    width: 710rpx;
+    margin: 0 20rpx;
+    background-color: #fff;
+}
+
+.weui-table .weui-tr-thead {
+    border-left: none;
+}
+
+.weui-table .weui-tr {
+    border-left: 1rpx solid #d9d9d9;
+}
+
+.weui-tr-thead .weui-th {
+    flex: 1;
+    height: 80rpx;
+    border-bottom: 1rpx solid #d9d9d9;
+    border-left: 0;
+    line-height: 80rpx;
+    text-align: center;
+}
+
+.weui-tr .weui-td {
+    flex: 1;
+    height: 80rpx;
+    border-right: 1rpx solid #d9d9d9;
+    border-bottom: 1rpx solid #d9d9d9;
+    line-height: 80rpx;
+    text-align: center;
+}
+
+.weui-model{
+    position:fixed;
+    width:710rpx;
+    left:50%;
+    margin-left: -355rpx;
+    z-index:999;
+    border:1rpx solid #555;
+    box-sizing: border-box;
+  }
+  .weui-model .weui-cells{
+    margin-top:0;
+  }
